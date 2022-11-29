@@ -1,0 +1,62 @@
+@media (max-width: 500px) {
+  header {
+    width: 500px;
+  }
+  .nav-ban {
+    height: 110px;
+  }
+  .container-nav {
+    display: block;
+  }
+  .container-nav a {
+    display: block;
+    padding: 10px;
+    padding-left: 20px;
+    border: 0;
+  }
+  main {
+    width: 500px;
+  }
+  .contai-bg-grey {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #target,
+  #personal-info {
+    width: 500px;
+  }
+
+  .certificate-img {
+    width: 450px;
+  }
+  .certificate-info {
+    font-size: 18px;
+    margin: 10px;
+    line-height: 25px;
+  }
+  .cert-prf {
+    border: none;
+  }
+  .cert-web {
+    border-bottom: 1px solid #d6c08d;
+  }
+
+  .info-ul {
+    padding-left: 0;
+  }
+
+  .project-8 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cont-footer-ul li p {
+    display: none;
+  }
+  .cont-footer-ul li {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

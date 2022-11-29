@@ -1,0 +1,470 @@
+/* set font chung cho trang web */
+* {
+  margin: 0px;
+}
+body {
+  font-family: sans-serif;
+  font-style: normal;
+  font-size: 10px;
+}
+.set-font {
+  min-width: auto;
+  margin: 0 auto;
+}
+/* cài đặt màu cho toàn trang web */
+.bg-grey {
+  background: #f7f7f7;
+  margin: 0 170px;
+}
+#nav-bar {
+  text-align: center;
+}
+/*tạo khoản cách và độ rộng cho job, dự án và chứng chỉ-giải thưởng   */
+section > .container-job-info,
+.container-project-info {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+.container-project-info {
+  width: auto;
+}
+.cont-certificate {
+  margin-left: 150px;
+}
+/* banner va chu trong khung */
+#banner {
+  position: relative;
+  text-align: center;
+}
+/* thiết lập độ rộng và độ sáng cho banner */
+.img-banner {
+  width: 100%;
+  filter: brightness(70%);
+}
+/* chỉ đingj vị trí và font cho chữ trên banner */
+.title-ban {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  color: #fff;
+}
+.title-ban h1 {
+  font-weight: lighter;
+  font-size: 36px;
+}
+.title-ban span {
+  font-weight: lighter;
+  padding-left: 30px;
+  font-size: 14px;
+}
+/* xong banner */
+/* thiết lập thanh nav và thẻ a dưới banner */
+#nav-ban {
+  border-bottom: 2px solid #3333;
+}
+.container-nav {
+  display: flex;
+  justify-content: center;
+}
+.container-nav a {
+  text-decoration: none;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: sans-serif;
+  border-left: 2px solid #3333;
+  border-right: 2px solid #3333;
+  color: #000;
+}
+/* tạo border cho thanh nav */
+.container-nav a:nth-child(3n + 1) {
+  border-right: 0px;
+}
+.container-nav-div {
+  padding: 5px 55px;
+  position: relative;
+}
+/* xong nav flexbox */
+/* phan 3 mục tiêu nghề nghiệp và thông tin cá nhân */
+/* chia khung và tạo chiều cao */
+.contai-bg-grey {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 250px;
+}
+/* tạo padding cho mục tiêu nghề nghiệp */
+#target {
+  padding-top: 25px;
+  background-color: #d6c08d;
+}
+#target p {
+  margin-top: 15px;
+  line-height: 25px;
+}
+.mt-40 {
+  margin-top: 20px;
+  list-style: none;
+  line-height: 25px;
+}
+#target p,
+.mt-40,
+.icon-info {
+  padding-left: 20px;
+}
+/* tạo màu cho các icon của nav với thông tin cá nhân */
+.icon-info,
+.icon-user,
+.icon-doc-text-inv,
+.icon-mail-alt,
+.icon-star-1 {
+  color: rgb(18, 108, 187);
+}
+/* thiết kế cho thông tin cá nhân */
+#personal-info {
+  padding-top: 25px;
+  padding-left: 50px;
+  background-color: rgb(185, 162, 162);
+}
+#emails:hover {
+  border-color: rgb(18, 108, 187);
+}
+#emails {
+  width: 90%;
+}
+/* xong bg-grey */
+/* phan 4 */
+/* chia cột và hàng cho các container */
+.container-job-info {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px 15px;
+}
+/* chuyển vị trí */
+.education {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.work {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+.skill {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.language {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+/* sap xep noi dung */
+/* tạo border cho các container */
+.experience,
+.language,
+.work,
+.education,
+.interests,
+.skill {
+  border: 2px solid #3333;
+}
+/* chia khung cho các phần tử theo yêu cầu 75% 25% 100% */
+.experience,
+.education,
+.work,
+.interests,
+.language,
+.skill {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 60px 1fr;
+}
+.experience-div,
+.education-div,
+.work-div,
+.interests-div {
+  margin-top: 25px;
+  line-height: 20px;
+}
+/* thay đổi ký hiệu hàng */
+.info-ul {
+  list-style: none;
+}
+.info-ul li::before {
+  content: "- ";
+}
+.title-job {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  padding-top: 20px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+/* chỉ định vị trí và kích thước icon */
+.ic-toolbox,
+.ic-pencil,
+.ic-telescope,
+.ic-mic,
+.ic-tools-2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-top: 25px;
+  font-size: 20px;
+}
+.experience-div,
+.education-div,
+.work-div,
+.interests-div,
+.language-div .skill-div {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+/* tạo màu cho kí hiệu trong danh sách */
+.job-ul-li::marker {
+  color: blue;
+}
+
+/* tạo chữ in nghiêng cho các phần tử ngày và giờ */
+.italic-p {
+  font-style: italic;
+}
+/* tạo màu cho phần tử hiện tại trong kinh nghiệm */
+.experience-p1 {
+  display: inline-block;
+}
+.experience-p2 {
+  display: inline-block;
+  width: 70px;
+  height: 45px;
+  background-color: rgb(51, 132, 225);
+  padding: 10px 0px 10px 5px;
+  border-radius: 15px;
+  color: #fff;
+}
+/* phần kỹ năng và ngôn ngữ */
+.skill-div,
+.language-div {
+  padding-left: 10px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+/* tạo thanh kinh nghiệm trong kỹ năng và ngôn ngữ */
+.colors {
+  display: flex;
+  justify-content: space-between;
+}
+.color {
+  width: 40px;
+  height: 2px;
+  background-color: rgb(18, 108, 187);
+  margin-right: 10px;
+  margin-top: 0px;
+  border-radius: 25px;
+}
+.color-gray {
+  background-color: #3333;
+}
+/* phan 5 thiết kế cho phần sở thích */
+.interests-div {
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+  gap: 5px;
+  justify-content: space-between;
+}
+.interests-div i {
+  font-size: 15px;
+  background-color: rgb(255, 255, 255);
+  width: 20px;
+  height: 20px;
+  padding: 5px 5px;
+  border-radius: 50px;
+  border: 2px solid rgb(18, 108, 187);
+}
+.interests-div p {
+  font-size: 10px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.ic-megaphone,
+.ic-strategy,
+.ic-hotairballoon,
+.ic-basket {
+  color: rgb(18, 108, 187);
+  box-sizing: unset;
+}
+/* xong p5 */
+/* p6 thiết kế tiêu đề cho dự án và chứng chỉ*/
+.certifi-title,
+.project-title {
+  font-size: 24px;
+  padding-top: 30px;
+}
+/* chia khung cho các phần tử */
+.certificate-bg-grey {
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 35px;
+}
+.cert-web,
+.cert-DBI,
+.cert-prf {
+  display: flex;
+  line-height: 15px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+/* thiết kế khung cho hình */
+.certificate-img {
+  width: 150px;
+}
+/* chỉ định vị trí cho chứng chỉ database */
+.cert-DBI {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  border-top: 1px solid #d6c08d;
+  margin-bottom: 30px;
+}
+.certificate-info {
+  font-size: 10px;
+  margin-left: 0px;
+  height: 100px;
+}
+.cert-prf {
+  border-left: 1px solid #d6c08d;
+  padding-left: 5px;
+}
+.info-ul {
+  padding-left: 0;
+}
+/* xong p6 */
+/* p8 */
+/* chia khoản cách cho các phần của dự án*/
+/* tạo thiết kế cho thẻ a */
+.container-project-info a {
+  text-decoration: none;
+  color: #000;
+}
+.container-project-info a:link {
+  color: #000;
+}
+.container-project-info a:hover {
+  color: #000;
+}
+.section-title {
+  padding-left: 70px;
+}
+.project-8 {
+  display: flex;
+  gap: 5px;
+  margin-top: 30px;
+  width: auto;
+}
+/* tạo border và thiết lập chiều cao  */
+.project-div {
+  height: auto;
+  border-bottom: 1px solid #3333;
+  border-left: 1px solid #3333;
+  border-right: 1px solid #3333;
+}
+.project-p {
+  height: 70px;
+}
+.project-p p {
+  margin-left: 10px;
+  padding-top: 15px;
+  font-size: 14px;
+}
+/* thiết kế icon trong web */
+.project-icon {
+  height: 50px;
+  border: 1px solid #3333;
+  padding-left: 1px;
+  margin-bottom: -3px;
+}
+/* tạo màu cho icon và chuyển các phần tử thành inline-block */
+.project-icon p,
+.project-icon i {
+  display: inline-block;
+  margin-top: 5px;
+  color: #000;
+  font-size: 12px;
+}
+/* tạo màu và khung cho năm 2021 */
+.project-icon p {
+  background-color: rgb(18, 108, 187);
+  width: 40px;
+  height: 30px;
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-left: 0;
+  border-radius: 15px;
+  font-size: 14px;
+}
+/* thiết kế bản cho các trang trong dự án */
+td {
+  border-top: 2px solid #3333;
+}
+.project-table td:first-child {
+  display: inline-block;
+  padding-top: 20px;
+  width: 70px;
+  font-size: 14px;
+  border-top: 2px solid #3333;
+}
+.project-table td:last-child {
+  padding: 20px 0px;
+  font-size: 14px;
+  border-top: 2px solid #3333;
+}
+/* xong p8 */
+/* phần footer căng chỉnh cho nằm giữa  */
+.cont-footer-ul {
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cont-footer li {
+  display: inline-block;
+  padding-top: 15px;
+}
+
+/* thiết kế phần icon footer  */
+.icon-facebook-circled,
+.icon-linkedin-circled,
+.icon-github-circled {
+  font-size: 25px;
+  color: rgb(18, 108, 187);
+}
+.cont-footer li p {
+  display: inline-block;
+  font-size: 18px;
+  color: #000;
+  font-style: normal;
+}
+/* nang cao */
+.cont-img {
+  width: 100px;
+  position: absolute;
+  margin-left: -55px;
+  bottom: -30px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+/* nhap lieeu */
+.hidden {
+  display: none;
+}
+
+/* phan 10 */
+/* thiết kế thẻ span viewmore và view less */
+.viewMore {
+  background-color: #d6c08d;
+  width: 60px;
+  height: 20px;
+  font-size: 12px;
+  margin-top: 0;
+  border-radius: 30%;
+}

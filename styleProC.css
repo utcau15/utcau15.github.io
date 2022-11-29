@@ -1,0 +1,145 @@
+@media (max-width: 500px) {
+  .pro-goals-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 768px) {
+  .pro-goals-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .in p,
+  .out p,
+  h2 {
+    padding-left: 5%;
+  }
+  /* team */
+  .pro-team-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pro-team-content {
+    padding-left: 5%;
+  }
+  /* xong team */
+  /* primary */
+  .pro-primary-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pro-primary-content {
+    padding-left: 5%;
+  }
+  /* xong primary */
+  /* timeline */
+  .digital-timeline {
+    padding-right: 100px;
+  }
+  /* xong timeline */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.Project-Charter {
+  background-color: blue;
+}
+h1 {
+  color: blue;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #3333;
+}
+.goals,
+.team,
+.scopes,
+.primary {
+  margin-left: 10px;
+}
+.goals,
+.team,
+.scopes,
+.primary {
+  background-color: beige;
+  line-height: 20px;
+}
+.pro-goals-icon {
+  padding-right: 30px;
+}
+.pro-goals {
+  margin-top: 25px;
+  border-bottom: 2px solid #3333;
+}
+/* xong goars */
+/* team */
+.pro-team-icon {
+  padding-right: 20px;
+  padding-left: 10px;
+}
+.pro-team {
+  margin-top: 25px;
+}
+
+/* xong team */
+/* primary */
+.pro-primary-icon {
+  padding-right: 20px;
+  padding-left: 10px;
+}
+.pro-primary {
+  margin-top: 25px;
+}
+/* xong primary */
+
+/* timeline */
+/* tạo icon 01-06  */
+.pro-timeline-icon {
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: rgb(137, 118, 198);
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  border: 3px solid #3333;
+  color: #fff;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+.pro-timeline-content {
+  border-bottom: 2px dotted rgb(111, 225, 183);
+  margin-right: 5%;
+}
+.pro-timeline-content {
+  margin-left: 15px;
+}
+.pro-timeline {
+  margin-top: 10px;
+}
+/* xong timeline */
+.digital-gri {
+  gap: 20px;
+}
+.digital-timeline {
+  margin: 10px 0px;
+  padding: 10px 10px;
+}
+.timeline {
+  height: 1fr;
+  background-color: beige;
+  line-height: 30px;
+}
+
+/* thiết lập thẻ a nhan là nhảy về lại digital-cv */
+.container a {
+  text-decoration: none;
+  color: black;
+}
+.container a:link {
+  color: black;
+}
+.container a:hover {
+  color: black;
+}

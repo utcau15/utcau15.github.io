@@ -1,0 +1,79 @@
+@media (max-width: 960px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    margin: 0;
+    padding: 0;
+    /* width: 700px; */
+  }
+  /* header */
+
+  .cont-img {
+    display: none;
+  }
+  .bg-grey {
+    width: 500px;
+    /* margin-left: 300px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #target h1 {
+    font-size: 22px;
+  }
+  #personal-info h1 {
+    font-size: 22px;
+  }
+  #personal-info {
+    padding-left: 5px;
+  }
+
+  /* xong about */
+
+  /* phan 5 */
+  #job-info {
+    /* width: 700px; */
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .experience-p2 {
+    width: 70px;
+    height: 50px;
+    background-color: rgb(51, 132, 225);
+  }
+
+  .ic-megaphone,
+  .ic-strategy,
+  .ic-hotairballoon,
+  .ic-basket {
+    /* color: blue;
+    right: 50px; */
+    box-sizing: content-box;
+  }
+
+  /* chung chi */
+  .cert-prf {
+    border-left: 1px solid #d6c08d;
+  }
+  /* du an */
+  .project-table td:first-child,
+  .project-table td:last-child {
+    font-size: 10px;
+  }
+  #project {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-icon {
+    height: auto;
+  }
+  .icon-lamp {
+    margin: 0 20px;
+  }
+  .section-title {
+    padding-left: 50px;
+  }
+}
